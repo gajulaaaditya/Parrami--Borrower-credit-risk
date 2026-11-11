@@ -1,0 +1,2 @@
+active_loans,active_borrowers,total_exposure,dpd30_loan_rate,dpd90_loan_rate,par30,par90,weighted_annual_rate,annual_interest_run_rate,illustrative_expected_loss,expected_loss_ratio
+290,234,7021344.0,0.593103448275862,0.15862068965517243,0.6261467889908257,0.16013344453711426,0.1575469140950792,1106191.0799999998,782123.0,0.11139220639239439

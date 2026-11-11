@@ -1,0 +1,21 @@
+/* Create the results folder before running. WORK tables are replaced on rerun. */
+%macro export_table(name);
+ proc export data=work.&name outfile="&root/results/&name..csv" dbms=csv replace;
+ run;
+%mend;
+%export_table(qa_failures);
+%export_table(data_quality_profile);
+%export_table(portfolio_summary);
+%export_table(risk_summary);
+%export_table(product_summary);
+%export_table(region_summary);
+%export_table(affordability_summary);
+%export_table(monthly_trend);
+%export_table(collections_queue);
+%export_table(borrower_features);
+%export_table(loan_risk);
+title "Synthetic borrower credit risk: 30 September 2025";
+proc print data=portfolio_summary noobs; run;
+proc print data=risk_summary noobs; run;
+proc print data=collections_queue(obs=20) noobs; run;
+title;

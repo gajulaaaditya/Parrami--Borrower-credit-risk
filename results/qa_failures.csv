@@ -1,0 +1,10 @@
+check_name,failure_count
+duplicate_borrower_key,0
+duplicate_loan_key,0
+duplicate_snapshot_key,0
+orphan_loans,0
+orphan_snapshots,0
+invalid_loan_values,0
+invalid_snapshot_values,0
+missing_asof_snapshot,0
+invalid_borrower_values,0
